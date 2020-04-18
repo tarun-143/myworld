@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300');
+body{
+	font-family:'Roboto', sans-serif;
+	font-weight: 300;
+	background-color: black;
+	color:white;
+	overflow: hidden;
+}
+html{
+	height: 100vh;
+
+}
+
+#fullpage{
+	display: flex;
+	flex-wrap: wrap;
+}
+#left{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	height: 100vh;
+	justify-content: center;
+	flex:1;
+}
+#right{
+	flex:1;
+}
+#sign-in
+{
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+    justify-content: center;
+    width: 80%;
+    padding-bottom: 35px; 
+}
+#details{
+	width: 80%;
+	padding-bottom: 30px;
+}
+#logo img{
+	margin-bottom: 20px;
+	width: 300px;
+	align-items: center;
+	
+}
+#sign-in label{
+	font-size: 15px;
+	line-height: 30px;
+	font-weight: 500;
+}
+#usernam
+{
+	margin-bottom: 10px;
+	width: 100%;
+	border-radius: 5px;
+	height: 35px;
+	background-color: rgb(5,6,3);
+}
+#pas
+{
+	margin-bottom: 25px;
+	width: 100%;
+	border-radius: 5px;
+	height: 35px;
+	background-color: rgb(5,6,3);
+}
+@media (min-width: 1200px){
+	#left{
+		flex: 4;
+	}
+	#right{
+		flex: 6;
+	}
+}
+.primary-btn{
+	padding: 5px;
+	background-color: darkorange;
+	width: 100%;
+	display: block;
+	align-items: center;
+	height: 45px;
+	color: white;
+	font-size: 20px;
+	border-radius: 5px;
+	text-align: center;
+	transition: all 0.75s;
+	cursor: pointer;
+
+}
+.primary-btn:hover{
+	background-color: springgreen;
+}
+.secondary-btn{
+	padding: 7px;
+	background-color: none;
+	width: 60%;
+	display: block;
+	align-items: center;
+	color: white;
+	font-size: 20px;
+	border-radius: 5px;
+	text-align: center;
+	transition: all 0.75s;
+	cursor: pointer;
+	border: solid 1px white;
+    padding-top: 10px;
+    height: 30px;
+
+}
+.secondary-btn:hover{
+	border-color: orange;
+	color: orange;
+	text-decoration: none;
+	 }
+#sign-in .links a{
+  	color: white;
+  	display: block;
+  	margin-bottom: 0.6rem;
+  	text-align: center;
+  	font-size: 0.8rem;
+  }
+  .or{
+  	display: flex;
+  	align-items: center;
+  	flex-direction: row;
+  	margin-bottom: 0.1rem;
+  }
+  .bar{
+  	flex: auto;
+  	border: none;
+  	background-color: white;
+  	height: 1px;
+  }
+  span{
+  	padding: 1rem;
+  	color:white;
+  }
+  #main-footer a{
+  	display: block;
+  	color: orange;
+  	padding: 3px;
+  }
+  .show{
+  	display: flex;
+  	flex-direction: column;
+  	background:url('images/sluralback.jpg') no-repeat center center / cover;
+  	justify-content: center;
+  	height: 100vh;
+  	align-items: center;
+  }
+  #show-text{
+  	font-size: 4rem;
+  	width: 100%;
+  	margin-bottom: 1.5rem;
+  	text-align: center;
+  }
+  @media (max-width: 768px){
+  	body{
+  		overflow: auto;
+  	}
+  	#right{
+        display: none;
+  	}
+
+  }
+ #left{
+ 	height: 100vh;
+ }
