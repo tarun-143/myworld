@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>my grid </title>
+	<style type="text/css">
+     @media(min-width: 550px)
+     {
+     	.grid{
+     		width: 80%;
+     	}
+     }
+     	@media (max-width: 549px)
+     	{
+     		.grid{
+     			width: 90%;
+     		}
+     	}
+     
+		.grid{
+			background-color: green;
+			display: grid;
+			padding: 20px;
+			grid-column-gap: 15px
+			grid-row-gap:8px;
+			grid-template-columns: auto auto auto auto;
+			
+		}
+		.item{
+			background-color: springgreen;
+			font-weight: bold;
+			font-size: 20px;
+			padding: 15px;
+			color: black;
+			text-align: center;
+			margin: 8px;
+		}
+
+	</style>
+	<meta  name="viewport" content="width=device-width ,initial-scale=1.0">
+</head>
+<body>
+<div class="grid">
+	<div class="item"> tarun </div>
+	<div class="item"> meghana </div>
+	<div class="item"> bhagya </div>
+	<div class="item"> jessi </div>
+	<div class="item"> deepu </div>
+	<div class="item"> adhitya </div>
+	<div class="item"> sai </div>
+	<div class="item"> sruthi</div>
+	<div class="item"> dinesh</div>
+	<div class="item"> sandeep</div>
+	<div class="item"> joshika </div>
+	<div class="item"> jaswin</div>
+</div>
+</body>
+</html>
