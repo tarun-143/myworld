@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>details</title>
+</head>
+<body>
+   <h2>Details</h2>
+   <ul>
+   	<li>Origin:{{ flight.origin }}</li>
+   	<li>Destination: {{ flight.destination }}</li>
+   	<li>Duration: {{ flight.duration }} min</li>
+   </ul>
+   <h3>List Of Passsengers:</h3>
+   <ul>
+   	{% for passenger in passengers %}
+   	<li>{{ passenger.name }}</li>
+   	{% else %}
+    No Passengers in This Flight
+    {% endfor %}
+   </ul>
+</body>
+</html>
