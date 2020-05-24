@@ -1,0 +1,20 @@
+import cmath
+print('Welcome to the quadratic equation solver app')
+print('we solve the quadratic equations of the form ax^2+bx+c=0')
+equations=int(input('how many equations do you want to solve:'))
+
+for i in range(1,equations+1):
+	print("\nsolving equation no:"+' '+str(i))
+	print('--------------------------------')
+	a=float(input('\ncoefficient of x^2:'))
+	b=float(input('\ncoefficient of x:'))
+	c=float(input('\nconstant:'))
+	x1=(-b+cmath.sqrt(b**2-4*a*c))/(2*a)
+	x2=(-b-cmath.sqrt(b**2-4*a*c))/(2*a)
+	real_x1=round(x1.real,3)
+	real_x2=round(x2.real,3)
+	imag_x1=round(x1.imag,3)
+	imag_x2=round(x2.imag,3)
+	print(f'the two solutions of {a}x^2+{b}x+{c} are:')
+	print(f'\nx1:{real_x1}+{imag_x1}j')
+	print(f'\nx2:{real_x2}+{imag_x2}j')

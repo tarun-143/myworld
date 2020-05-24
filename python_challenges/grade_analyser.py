@@ -1,0 +1,42 @@
+print('Welcome to the Grade Analyser App')
+name=input('what is your name:')
+name=name.title()
+num=int(input('\nhow many grades do u want enter:'))
+grades=[]
+for i in range(num):
+	Grade=int(input('enter the Grade:'))
+	grades.append(Grade)
+grades.sort()
+print('grades from highest to lowest:')
+for i in grades:
+	print('\t'+str(i))
+old_avg=sum(grades)/num
+print(name+"'s"+" Grade summary:")
+print('\t'+'Total number of grades:'+str(num))
+print('\t'+'highest grade:'+str(max(grades)))
+print('\t'+'lowest grade:'+str(min(grades)))
+print('\t'+'average grade:'+str(sum(grades)/num))
+des_avg=float(input('what is your desired avg:'))
+marks=des_avg*(num+1)-sum(grades)
+print('\n')
+print(f'good luck {name}!')
+print(f'the marks u ned to score to get your desired avg are:{marks}')
+print('lets see what your avg could be if you better or worse in a test.')
+changed=int(input('what Grade would you like to change:'))
+grades.remove(changed)
+new=int(input(f'u want to change {changed} to:'))
+grades.append(new)
+grades.sort()
+print('grades from highest to lowest:')
+for i in grades:
+	print('\t'+str(i))
+avg=sum(grades)/num
+change_in_avg=avg-old_avg
+change_in_avg=round(change_in_avg,3)
+print(name+"'s"+" Grade summary:")
+print('\t'+'Total number of grades:'+str(num))
+print('\t'+'highest grade:'+str(max(grades)))
+print('\t'+'lowest grade:'+str(min(grades)))
+print('\t'+'average grade:'+str(sum(grades)/num))
+print(f'its a change of {change_in_avg}')
+print(f'Goood Luck {name}.')
