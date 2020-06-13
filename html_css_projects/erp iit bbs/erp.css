@@ -1,0 +1,173 @@
+ body{
+ 	background-color: black;
+ }
+ .fullpage{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	font-family: sans-serif;
+	overflow: hidden;
+}
+.heading{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	width: 60%;
+	color:#03436B;
+	font-size: 0.9rem;
+    border: solid white 2px;
+    border-radius: 30px;
+	background-color: white;
+}
+.logo img{
+	width: 90px;
+	height: 85px;
+    margin-right:20px;
+
+}
+.borderline{
+	background-color: #03436B;
+	width: 100%;
+	height: 8vh;
+}
+.end{
+	width: 100%;
+	justify-content: center;
+	text-align: center;
+	font-size: 0.7rem;
+	color: grey;
+}
+.end a{
+	color: white;
+	text-decoration: underline;
+}
+.submitform{
+	display: flex;
+	flex-flow: column;
+	margin: 10px;
+	border: 1px solid grey;
+	width: 35%;
+
+}
+.loginhead{
+	background-color: #003a94;
+	color: white;
+    border: solid grey 1px;
+   line-height: 10px;
+   padding-left: 15px;
+}
+.loginhead h1{
+	font-weight: bold;
+}
+.loginhead p{
+	font-size: 0.8rem;
+}
+.loginwithemail button{
+	background-color: orange;
+	padding: 8px;
+	margin-top: 10px;
+	width: 60%;
+	cursor: pointer;
+	transition: 1s;
+}
+.loginwithemail button:hover{
+	background-color: springgreen;
+}
+.loginwithemail button a {
+	color: black;
+	font-weight: bold;
+	text-decoration: none;
+	text-align: center;
+	align-content: center;
+}
+.loginwithemail{
+	display: flex;
+	align-items: center;
+	flex-direction: row;
+	justify-content: center;
+}
+.loginemail{
+	display: flex;
+	flex-direction: column;
+}
+.or{
+	display: flex;
+	flex-direction:row;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	align-items: center;
+}
+.line {
+	background-color: red;
+	flex: auto;
+	height: 1px;
+	border: none;
+}
+.ortext{
+	border: solid red 1px;
+	padding: 5px;
+	border-radius: 100%;
+	color: white;
+	}
+.userdetails{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+
+}
+.leftside{
+	display: flex;
+	flex-direction: column;
+	font-weight: bolder;
+	font-size: 0.9rem;
+	color: white;
+}
+.rightside{
+	height: 2.2rem;
+	border: solid 1px lightgrey;
+	margin: 10px;
+	margin-left: 50px;
+	width: 50%;
+}
+#marginforuserid{
+	margin-left: 20px;
+}
+.loginbtn button{
+	background-color: green;
+	margin-left: 36%;
+	height: 2.3rem;
+	padding: 6px;
+	width: 80px;
+	color: white;
+}
+.forgot{
+	display: flex;
+	font-size: 0.8rem;
+	text-align: center;
+	justify-content: center;
+	color: white;
+}
+.forgot a{
+	font-weight: bold;
+	text-decoration: none;
+	color: springgreen;
+}
+@media (max-width: 700px){
+	.submitform{
+		width: 80%;
+	}
+	.userdetails{
+		display: flex;
+		flex-direction: column;
+	}
+	.heading{
+		width: 90%;
+		font-size: 0.7rem;
+	}
+	.logo img{
+		width: 65px;
+		height: 60px;
+	}
+}

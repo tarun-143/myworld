@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>my webpage</title>
+	<script type="text/javascript">
+		document.addEventListener('DOMContentLoaded',()=>{
+			document.querySelector('#colorchange').onchange=function(){
+				document.querySelector('#hello').style.color=this.value;
+			};
+		});
+	</script>
+</head>
+<body>
+	<h1 id="hello">Hello!</h1>
+		<select id="colorchange">
+			<option value="black">black</option>
+			<option  value="green">green</option>
+			<option   value="blue">blue</option>
+			<option  value="red">red</option>
+		</select>
+</body>
+</html>
